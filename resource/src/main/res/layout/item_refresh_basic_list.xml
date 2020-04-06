@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorWhite"
+	android:gravity="center"
+	android:orientation="vertical">
+	
+	<ImageView
+		android:id="@+id/ivStatus"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@mipmap/img_refresh_status"/>
+	
+	<TextView
+		android:id="@+id/tvStatus"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="10dp"
+		android:gravity="center"
+		android:textColor="#B5B5B5"
+		android:textSize="16sp"
+		android:visibility="gone"
+		tools:visibility="visible"
+		tools:text="loading"/>
+	
+	<TextView
+		android:id="@+id/tvCheck"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="6dp"
+		android:textColor="#BEBEBE"
+		android:textSize="12sp"
+		android:visibility="gone"
+		android:text="@string/please_check_your_network"
+		tools:visibility="visible"/>
+	
+	<TextView
+		android:id="@+id/tvReload"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:background="@drawable/bg_status_reload"
+		android:paddingLeft="20dp"
+		android:paddingTop="5dp"
+		android:paddingRight="20dp"
+		android:paddingBottom="5dp"
+		android:text="@string/reload"
+		android:textColor="@color/colorTextPrimary"
+		android:textSize="12sp"/>
+</LinearLayout>

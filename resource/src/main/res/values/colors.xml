@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00D8CE</color>
+    <color name="colorPrimaryDark">#00D8CE</color>
+    <color name="colorAccent">#01C6BD</color>
+    <color name="colorAssist1">#2A3A52</color>
+    <color name="colorAssist2">#FC6025</color>
+    <color name="colorDisable">#C4C7CC</color>
+
+    <color name="colorWindowDefault">#F2F4F7</color>
+
+    <!-- 重点 -->
+    <color name="colorTextAccent">@color/colorAccent</color>
+    <!-- 主级 -->
+    <color name="colorTextPrimary">#313233</color>
+    <!-- 次级 -->
+    <color name="colorTextSecondary">#626366</color>
+    <!-- 辅助 -->
+    <color name="colorTextAssist">#939599</color>
+    <!-- 提示 -->
+    <color name="colorTextHint">#8F8E94</color>
+    <!-- 忽略 -->
+    <color name="colorTextInessential">#BEBEBE</color>
+
+    <!-- 分割线 -->
+    <color name="colorDivider">#D0D3D9</color>
+    <!-- 描边 -->
+    <color name="colorStroke">#D0D3D9</color>
+    <!-- 遮罩 -->
+    <color name="colorMasker">#60000000</color>
+
+    <color name="colorWhite">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.wp.app.resource.common.ToolbarAction" />
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="titleColorId"
+            type="int" />
+
+        <variable
+            name="leftAction"
+            type="ToolbarAction" />
+
+        <variable
+            name="rightAction"
+            type="ToolbarAction" />
+
+        <variable
+            name="backgroundResId"
+            type="int" />
+
+        <variable
+            name="showDivider"
+            type="Boolean" />
+    </data>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@{backgroundResId != 0 ? backgroundResId : @color/colorPrimary}"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        tools:background="@color/colorPrimary"
+        tools:layout_height="44dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvToolbarLeft"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="@{leftAction.listener}"
+                android:text="@{leftAction.text}"
+                android:textColor="@{leftAction.textColor != 0 ? leftAction.textColor : @color/colorTextAccent}"
+                android:textSize="16sp"
+                android:visibility="@{leftAction.text == null ? View.GONE : View.VISIBLE}"
+                tools:text="@string/app_name"
+                tools:textColor="@color/colorTextAccent"
+                tools:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ivToolbarLeft"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="@{leftAction.listener}"
+                android:scaleType="centerInside"
+                android:src="@{leftAction.drawable}"
+                android:visibility="@{leftAction.drawable == null ? View.GONE : View.VISIBLE}"
+                tools:layout_height="match_parent"
+                tools:layout_width="44dp"
+                tools:src="@mipmap/ic_fanhui" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="?android:attr/actionBarSize"
+                android:layout_marginRight="?android:attr/actionBarSize"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@{title}"
+                android:textColor="@{titleColorId != 0 ? titleColorId : @color/colorWhite}"
+                android:textSize="@dimen/dimenTextMark"
+                tools:ignore="RelativeOverlap"
+                tools:text="@string/app_name"
+                tools:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tvToolbarRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="@{rightAction.listener}"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:text="@{rightAction.text}"
+                android:textColor="@{rightAction.textColor != 0 ? rightAction.textColor : @android:color/white}"
+                android:textSize="@dimen/dimenTextSecondary"
+                android:visibility="@{rightAction.text == null ? View.GONE : View.VISIBLE}"
+                tools:ignore="RelativeOverlap"
+                tools:text="@string/app_name"
+                tools:textColor="@color/colorTextAccent"
+                tools:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ivToolbarRight"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="@{rightAction.listener}"
+                android:scaleType="centerInside"
+                android:src="@{rightAction.drawable}"
+                android:visibility="@{rightAction.drawable == null ? View.GONE : View.VISIBLE}" />
+
+            <View
+                style="@style/ViewDividerHorizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/dimenThemeDivider"
+                android:visibility="@{showDivider ? View.VISIBLE : View.GONE}"
+                tools:visibility="gone" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+</layout>

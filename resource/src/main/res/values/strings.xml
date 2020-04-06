@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">resource</string>
+
+    <!-- basic -->
+    <string name="loading_dot">加载中…</string>
+    <string name="load_complete">已经到底了~</string>
+    <string name="data_empty">抱歉, 暂无数据</string>
+    <string name="network_request_error">数据获取发生异常</string>
+    <string name="reload">重新加载</string>
+    <string name="please_check_your_network">请检查您的网络</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放刷新</string>
+    <string name="refresh_complete">加载完成</string>
+
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="complete">完成</string>
+    <string name="save">保存</string>
+    <string name="delete">删除</string>
+    <string name="quit">退出</string>
+
+    <string name="pay_title">请输入支付密码</string>
+    <string name="permission_denied_tip">缺少运行时的必要权限, 该功能暂时无法使用. 请点击[确定], 前往设置中心进行授权</string>
+    <string name="dine_permission_tips">获取必要权限失败, 应用无法正常使用\n(已禁止的权限需要到"设置"-"应用管理", 找到对应权限设置为允许)</string>
+    <string name="re_permission">重新获取</string>
+    <string name="hint_permission">请打开设置,应用管理，权限管理，兜要，打开读取权限</string>
+    <!-- basic -->
+</resources>

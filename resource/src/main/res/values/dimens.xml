@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 分割线 -->
+    <dimen name="dimenThemeDivider">1px</dimen>
+    <!-- 分割空间 -->
+    <dimen name="dimenThemeSpace">8dp</dimen>
+
+    <dimen name="dimenTextLarge">30sp</dimen>
+    <!-- 重点 -->
+    <dimen name="dimenTextAccent">20sp</dimen>
+    <!-- 标明 -->
+    <dimen name="dimenTextMark">18sp</dimen>
+    <!-- 主级 -->
+    <dimen name="dimenTextPrimary">16sp</dimen>
+    <!-- 次级 -->
+    <dimen name="dimenTextSecondary">14sp</dimen>
+    <!-- 辅助 -->
+    <dimen name="dimenTextAssistBigger">13sp</dimen>
+    <dimen name="dimenTextAssist">12sp</dimen>
+    <dimen name="dimenTextAssistSmall">10sp</dimen>
+
+    <!-- 分割线 -->
+    <dimen name="dimenDivider">1px</dimen>
+    <!-- 间隔 -->
+    <dimen name="dimenGapSpace">8dp</dimen>
+
+</resources>

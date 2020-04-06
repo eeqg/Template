@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标注 -->
+    <attr name="colorTextAccent" format="color" />
+    <!-- 主级 -->
+    <attr name="colorTextPrimary" format="color" />
+    <!-- 次级 -->
+    <attr name="colorTextSecondary" format="color" />
+    <!-- 辅助 -->
+    <attr name="colorTextAssist" format="color" />
+
+    <attr name="toolbarBackground" format="color" />
+    <attr name="toolbarTitleTextColor" format="color" />
+    <attr name="toolbarTitleTextSize" format="dimension" />
+    <attr name="toolbarBackImage" format="reference" />
+    <attr name="toolbarActionTextColor" format="color" />
+    <attr name="toolbarActionTextSize" format="dimension" />
+
+    <declare-styleable name="GridLayoutView">
+        <attr name="grid_col" format="integer" />
+        <attr name="grid_row" format="integer" />
+        <attr name="grid_space_row" format="dimension" />
+        <attr name="grid_space_col" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="etv_text" format="string" />
+        <attr name="etv_textColor" format="color" />
+        <attr name="etv_textSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordInputView">
+        <attr name="piv_itemLength" format="integer"/>
+        <attr name="piv_itemSrc" format="reference"/>
+        <attr name="piv_itemBackground" format="reference"/>
+        <attr name="piv_itemPadding" format="dimension"/>
+        <attr name="piv_divider" format="reference"/>
+        <attr name="piv_dividerWidth" format="dimension"/>
+    </declare-styleable>
+</resources>
