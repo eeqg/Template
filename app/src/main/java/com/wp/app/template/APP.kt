@@ -8,6 +8,7 @@ import android.view.Gravity
 import android.widget.Toast
 import androidx.multidex.MultiDex
 import com.wp.app.resource.basic.BasicApp
+import com.wp.app.template.comm.AppCache
 
 /**
  * Created by wp on 2020/4/6.
@@ -54,6 +55,10 @@ class APP : BasicApp() {
     override fun onCreate() {
         super.onCreate()
         INSTANCE = this
+
+        AppCache.appContext = this
+//        AppCache.baseUrl = BuildConfig.BASE_URL + BaseConst.DOMAIN_APP
+//        AppCache.baseH5Url = BuildConfig.BASE_URL + BaseConst.DOMAIN_H5
     }
 
     override fun requestLogin(context: Context, requestCode: Int) {

@@ -9,4 +9,11 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    <string name="user_agree_ment">用户协议</string>
+    <string name="and">和</string>
+    <string name="private_guide">隐私政策</string>
+    <string name="warm_prompt">温馨提示</string>
+    <string name="agree">同意</string>
+    <string name="disagree">不同意</string>
 </resources>

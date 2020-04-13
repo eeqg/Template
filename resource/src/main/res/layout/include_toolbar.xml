@@ -38,7 +38,7 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@{backgroundResId != 0 ? backgroundResId : @color/colorPrimary}"
+        android:background="@{backgroundResId != 0 ? backgroundResId : @color/colorToolBar}"
         app:contentInsetEnd="0dp"
         app:contentInsetLeft="0dp"
         app:contentInsetRight="0dp"
@@ -97,7 +97,7 @@
                 android:gravity="center"
                 android:maxLines="1"
                 android:text="@{title}"
-                android:textColor="@{titleColorId != 0 ? titleColorId : @color/colorWhite}"
+                android:textColor="@{titleColorId != 0 ? titleColorId : @color/colorTextPrimary}"
                 android:textSize="@dimen/dimenTextMark"
                 tools:ignore="RelativeOverlap"
                 tools:text="@string/app_name"

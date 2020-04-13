@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+	
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/bg_dialog"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:paddingTop="16dp">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/warm_prompt"
+			android:textColor="@color/colorTextPrimary"
+			android:textSize="@dimen/dimenTextPrimary" />
+		
+		<WebView
+			android:id="@+id/webView"
+			android:layout_width="match_parent"
+			android:layout_height="290dp"
+			android:layout_margin="12dp"
+			android:scrollbars="none" />
+		
+		<View style="@style/ViewDividerHorizontal" />
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			
+			<TextView
+				android:id="@+id/tvDisagree"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:text="@string/disagree"
+				android:textColor="@color/colorTextPrimary"
+				android:textSize="@dimen/dimenTextPrimary" />
+			
+			<View style="@style/ViewDividerVertical" />
+			
+			<TextView
+				android:id="@+id/tvAgree"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:text="@string/agree"
+				android:textColor="@color/colorTextAccent"
+				android:textSize="@dimen/dimenTextPrimary" />
+		</LinearLayout>
+	</LinearLayout>
+</layout>

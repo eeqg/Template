@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_login"
+    app:startDestination="@id/fragment_login_index">
+
+    <fragment
+        android:id="@+id/fragment_login_index"
+        android:name="com.wp.app.template.ui.login.LoginIndexFragment"
+        tools:layout="@layout/fragment_login_index">
+
+        <action
+            android:id="@+id/action_to_register"
+            app:destination="@id/fragment_register"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_register"
+        android:name="com.wp.app.template.ui.login.RegisterFragment"
+        tools:layout="@layout/fragment_register">
+
+<!--        <action-->
+<!--            android:id="@+id/action_to_register2"-->
+<!--            app:destination="@id/fragment_register2"-->
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left"-->
+<!--            app:popEnterAnim="@anim/slide_in_left"-->
+<!--            app:popExitAnim="@anim/slide_out_right" />-->
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/fragment_register2"-->
+<!--        android:name="com.douyao.example.mine.account.RegisterStep2Fragment"-->
+<!--        tools:layout="@layout/fragment_register_step2">-->
+
+<!--        <argument-->
+<!--            android:name="inviteCode"-->
+<!--            android:defaultValue="-1"-->
+<!--            app:argType="string" />-->
+<!--    </fragment>-->
+</navigation>

@@ -8,6 +8,7 @@
     <color name="colorDisable">#C4C7CC</color>
 
     <color name="colorWindowDefault">#F2F4F7</color>
+    <color name="colorToolBar">#FFFFFF</color>
 
     <!-- 重点 -->
     <color name="colorTextAccent">@color/colorAccent</color>

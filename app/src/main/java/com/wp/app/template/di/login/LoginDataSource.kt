@@ -3,6 +3,7 @@ package com.wp.app.template.di.login
 import com.wp.app.resource.basic.net.BasicBean
 import com.wp.app.resource.basic.net.BasicNetwork
 import com.wp.app.resource.utils.LogUtils
+import com.wp.app.template.comm.Const
 import com.wp.app.template.di.model.LoginBean
 import io.reactivex.Observable
 
@@ -12,12 +13,14 @@ import io.reactivex.Observable
 class LoginDataSource {
 
     private var service: LoginService =
-        BasicNetwork("baseUrl").createService(LoginService::class.java)
+        BasicNetwork(Const.BASE_URL).createService(LoginService::class.java)
 
     fun login(username: String, password: String): Observable<LoginBean> {
         LogUtils.d("-----currentThread : ${Thread.currentThread().name}")
 //        Thread.sleep(2000)
-        val fakeUser = LoginBean(java.util.UUID.randomUUID().toString(), username)
+        val fakeUser = LoginBean()
+        fakeUser.userId = java.util.UUID.randomUUID().toString()
+        fakeUser.displayName = username
         return Observable.just(fakeUser)
     }
 
